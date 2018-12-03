@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Starting mySQL and Apache..."
+if [ -z "$1" ]
+    then
+        sudo /opt/lampp/./manager-linux-x64.run &
+else
+    sudo /opt/lampp/lampp $1
+
+fi
